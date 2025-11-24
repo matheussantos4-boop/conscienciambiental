@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #0f1a2c;
+    --secondary-color: #f6ac0f;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f8fafc;
+    --white: #ffffff;
+    --gradiente: linear-gradiente(to right bottom, #ffd43b, #ff9900);
+    
+    --ff: "playfair display", serif;
+
+    /*define 1rem = 16px*/
+    font-size: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: blue;
+    font-family: "poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: yellow;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 90%;
+    padding: 1rem 2rem;
+    border: solid green 3px;
+    border-radius: 15px;
+    transform: translateY(35%);
+}
+.logo {
+    height: 75px;
+    width: 75px;
+}
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h1 {
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 1000;
+}
+.menu {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+    gap: 100px;
+}
+.links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+.lista a {
+    color: blue;
+    font-weight: 700;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.lista a:hover {
+    color: green;
+}
+.btn01 {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    border: solid 3px blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn01:hover {
+    box-shadow: 0 0 12px blue;
+    background-color: blue;
+    border: solid 3px white;
+}
+.btn01 a {
+    color: blue;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn01:hover a {
+    color: white;
+}
+.btn02 {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    border: solid 3px green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn02:hover {
+    box-shadow: 0 0 12px green;
+    background-color: green;
+    border: solid 3px white;
+}
+.btn02 a {
+    color: green;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn02:hover a{
+    color: white;
+}
+.pesquisar {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 9px;
+    padding-bottom: 0.1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.search {
+    color: green;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.pesquisar input {
+    background: none;
+    border: none;
+    padding-left: 1rem;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 800;
+    width: 200px;
+    outline: none;
+}
+.seção01 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+.seção01 video {
+    position: relative;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+}
+.cadastrar {
+    position: absolute;
+    position: absolute;
+    margin-right: 100px;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: solid black 3px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: slide-up 2s ease-out forwards;
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.titulo_cc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.titulo_cc h1 {
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: blue;
+}
+.informações_pessoais {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.caixa_texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 8px;
+}
+.caixa_texto input {
+    border: solid black 1px;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    padding-left: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px ;
+    color: black
+}
+.botao_cc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.btn03 {
+    background-color: green;
+    width: 175px;
+    height: 70px;
+    font-size: medium;
+    border: solid yellow 3px;
+    border-radius: 15px;
+}
+.btn03 a {
+    font-weight: bolder;
+    font-size: 25px;
+    color: yellow
+}
+.btn03:hover {
+    box-shadow: 0 0 12px yellow;
+    background-color: yellow;
+    color: white;
+    border: solid 3px green;
+}
+
+.btn03:hover a{
+    color: green;
+}
+.seção01 .slogan{
+    top: 250px;
+    left: 100px;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+}
+.slogan h1 {
+    font-size: 4rem;
+    font-family: var(--ff);
+    margin-bottom: 2rem;
+    color: blue;
+    font-weight: 800;
+    animation: slide-up 2s ease-out forwards;
+    text-shadow: 2px 2px 2px white;
+}
+.seção02 {
+    background-image: url('../img/PLANO\ DE\ FUNDO\ 02.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-block:10rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.section_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    color: var(--secondary-color);
+}
+.search {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.search ion-icon:hover {
+    color: var(--secondary-color);
+}
+.navbar_toggle {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar_toggle ion-icon:hover {
+    color: var(--secondary-color)
+}
+.hero_container {
+    color: yellow;
+}
+.titulo02 {
+    height: 300px;
+}
+.titulo02 h1 {
+    color: yellow;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.cursos {
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around; 
+}
+.item {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 800px;
+    border: solid yellow 5px;
+    border-radius: 0 15px 0 15px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+}
+.mudanças_climaticas { 
+    background-image:  url('../img/MUDANÇAS\ CLIMATICA\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-block:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+.mudanças_climaticas h1 {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+}
+.mudanças_climaticas h3 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 750;
+}
+.energias_renovaveis {
+    background-image: url('../img/Energias\ renovaveis.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-block:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+.energias_renovaveis h1 {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+}
+.energias_renovaveis h3 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 750;
+}
+.gestao_de_residuos {
+    background-image: url('../img/GESTAODERESIDUOS\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-block:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+.gestao_de_residuos h1 {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+}
+.gestao_de_residuos h3 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 750;
+}
+.biodiversidade {
+    background-image: url('../img/biodiversidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-block:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+.biodiversidade h1 {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+}
+.biodiversidade h3 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 750;
+}
+.sustentabilidade {
+    background-image: url('../img/sustentabilidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-block:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+.sustentabilidade h1 {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+}
+.sustentabilidade h3 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 750;
+}
+.introdução {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introdução h2 {
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-shadow: 5px 5px 5px black;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+.redes {
+    height: 70px;
+    background-color:yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.redes img {
+    width: 50px;
+    height: 50px;
+}
+.termos {
+    background-color: ;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lista02 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.lista02 a {
+    color: rgb(0, 26, 255);
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 23px;
+}
+.lista03 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: large;
+    color: blue;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    gap: 30px;
+}
+.rodape {
+    height: 70px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rodape h1 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+}

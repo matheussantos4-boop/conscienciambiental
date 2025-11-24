@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: yellow;
+}
+.seção01cad {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.titulo_site {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.titulo_site h1 {
+    color: green;
+    font-size: 80px;
+    font-weight: bolder;
+}
+.titulo_cc {
+    text-align: center;
+}
+.titulo_cc h1 {
+    color: red;
+    font-size: 80px;
+    font-weight: 1000;
+}
+.btn03 {
+    background-color: green;
+    width: 175px;
+    height: 70px;
+    font-size: medium;
+    border: solid yellow 3px;
+    border-radius: 15px;
+}
+.btn03 a {
+    font-weight: bolder;
+    font-size: 25px;
+    color: yellow
+}
+.btn03:hover {
+    box-shadow: 0 0 12px blue;
+    background-color: yellow;
+    border: solid 3px blue;
+}
+.btn03:hover a{
+    color: blue;
+    font-weight: 1000;
+}
