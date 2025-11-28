@@ -32,16 +32,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 90px;
     width: 90%;
     padding: 1rem 2rem;
-    border: solid green 3px;
+    border: solid green 2px;
     border-radius: 15px;
     transform: translateY(35%);
 }
 .logo {
-    height: 75px;
-    width: 75px;
+    height: 70px;
+    width: 70px;
 }
 .titulo {
     display: flex;
@@ -57,19 +57,17 @@ header {
     font-weight: 1000;
 }
 .menu {
-    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    height: 120px;
-    gap: 100px;
+    gap: 300px;
 }
 .links {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 .lista {
     list-style: none;
@@ -92,14 +90,14 @@ header {
     height: 40px;
     background-color: white;
     text-align: center;
-    border: solid 3px blue;
+    border: solid 2px blue;
     border-radius: 10px;
     cursor: pointer;
 }
 .btn01:hover {
     box-shadow: 0 0 12px blue;
     background-color: blue;
-    border: solid 3px white;
+    border: solid 2px white;
 }
 .btn01 a {
     color: blue;
@@ -115,14 +113,14 @@ header {
     height: 40px;
     background-color: white;
     text-align: center;
-    border: solid 3px green;
+    border: solid 2px green;
     border-radius: 10px;
     cursor: pointer;
 }
 .btn02:hover {
     box-shadow: 0 0 12px green;
     background-color: green;
-    border: solid 3px white;
+    border: solid 2px white;
 }
 .btn02 a {
     color: green;
@@ -132,36 +130,6 @@ header {
 }
 .btn02:hover a{
     color: white;
-}
-.pesquisar {
-    width: 200px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 9px;
-    padding-bottom: 0.1rem;
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.search {
-    color: green;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-.pesquisar input {
-    background: none;
-    border: none;
-    padding-left: 1rem;
-    font-style: italic;
-    font-size: 17px;
-    font-weight: 800;
-    width: 200px;
-    outline: none;
 }
 .seção01 {
     width: 100%;
@@ -181,17 +149,17 @@ header {
 }
 .cadastrar {
     position: absolute;
-    position: absolute;
     margin-right: 100px;
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 530px;
+    padding-top: 25px;
     background-color: white;
     border: solid black 3px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    gap: 25px;
     animation: slide-up 2s ease-out forwards;
 }
 @keyframes slide-up {
@@ -212,51 +180,100 @@ header {
 .titulo_cc h1 {
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 35px;
     color: blue;
 }
 .informações_pessoais {
-    width: 500px;
+    width: 400px;
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
+}
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.google button{
+    width: 150px;
+    height: 45px;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apple button{
+    width: 150px;
+    height: 45px;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.google button:hover {
+    box-shadow: 0 0 12px green;
+    background-color: white;
+    border: solid 3px green;
+}
+.apple button:hover {
+    box-shadow: 0 0 12px green;
+    background-color: white;
+    border: solid 3px green;
 }
 .caixa_texto {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 8px;
+    margin: 5px;
 }
 .caixa_texto input {
     border: solid black 1px;
     border-radius: 5px;
-    width: 400px;
-    height: 60px;
+    width: 350px;
+    height: 45px;
     padding-left: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 27px ;
+    font-size: 20px ;
     color: black
+}
+.termos01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+.termos01 h3{
+    font-size: 13px;
+    font-weight: 500;
+
 }
 .botao_cc {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-bottom: 25px
 }
 .btn03 {
     background-color: green;
     width: 175px;
-    height: 70px;
+    height: 50px;
     font-size: medium;
-    border: solid yellow 3px;
+    border: solid yellow 2px;
     border-radius: 15px;
 }
 .btn03 a {
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 21px;
     color: yellow
 }
 .btn03:hover {
@@ -271,19 +288,19 @@ header {
 }
 .seção01 .slogan{
     top: 250px;
-    left: 100px;
+    left: 75px;
     position: absolute;
     margin: 0 auto;
     text-align: center;
 }
 .slogan h1 {
-    font-size: 4rem;
+    font-size: 60px;
     font-family: var(--ff);
     margin-bottom: 2rem;
     color: blue;
     font-weight: 800;
     animation: slide-up 2s ease-out forwards;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 1px 1px 1px yellow;
 }
 .seção02 {
     background-image: url('../img/PLANO\ DE\ FUNDO\ 02.png');
@@ -344,137 +361,65 @@ header {
 }
 .item {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 300px;
     height: 800px;
     border: solid yellow 5px;
     border-radius: 0 15px 0 15px;
-    margin: 5px;
-    text-align: center;
+    margin-top: 5px;
+    gap: 100px;
     box-shadow: 3px 3px 5px black;
+}
+.titulo01 {
+    margin-top: 75px;
+    text-align: center;
+}
+.texto{
+    text-align: center;
+}
+.titulo01 h1{
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px black;
+}
+.texto h3{
+    color: yellow;
+    font-size: 20px;
+    font-weight: 750;
+    text-shadow: 2px 2px 5px black;
 }
 .mudanças_climaticas { 
     background-image:  url('../img/MUDANÇAS\ CLIMATICA\ 1.png');
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    padding-block:10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-}
-.mudanças_climaticas h1 {
-    color: yellow;
-    font-size: 25px;
-    font-weight: 900;
-}
-.mudanças_climaticas h3 {
-    color: yellow;
-    font-size: 20px;
-    font-weight: 750;
 }
 .energias_renovaveis {
     background-image: url('../img/Energias\ renovaveis.png');
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    padding-block:10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-}
-.energias_renovaveis h1 {
-    color: yellow;
-    font-size: 25px;
-    font-weight: 900;
-}
-.energias_renovaveis h3 {
-    color: yellow;
-    font-size: 20px;
-    font-weight: 750;
 }
 .gestao_de_residuos {
     background-image: url('../img/GESTAODERESIDUOS\ 1.png');
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    padding-block:10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-}
-.gestao_de_residuos h1 {
-    color: yellow;
-    font-size: 25px;
-    font-weight: 900;
-}
-.gestao_de_residuos h3 {
-    color: yellow;
-    font-size: 20px;
-    font-weight: 750;
 }
 .biodiversidade {
     background-image: url('../img/biodiversidade.jpg');
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    padding-block:10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-}
-.biodiversidade h1 {
-    color: yellow;
-    font-size: 25px;
-    font-weight: 900;
-}
-.biodiversidade h3 {
-    color: yellow;
-    font-size: 20px;
-    font-weight: 750;
 }
 .sustentabilidade {
     background-image: url('../img/sustentabilidade.jpg');
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    padding-block:10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-}
-.sustentabilidade h1 {
-    color: yellow;
-    font-size: 25px;
-    font-weight: 900;
-}
-.sustentabilidade h3 {
-    color: yellow;
-    font-size: 20px;
-    font-weight: 750;
 }
 .introdução {
     height: 500px;
@@ -529,14 +474,20 @@ footer {
 }
 .lista03 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    font-size: large;
+    font-weight: 500;
+    font-size: 20px;
     color: blue;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
-    gap: 30px;
+    gap: 15px;
+}
+.t02{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .rodape {
     height: 70px;
