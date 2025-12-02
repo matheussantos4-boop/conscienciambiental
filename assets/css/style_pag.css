@@ -90,7 +90,7 @@ header {
     height: 40px;
     background-color: white;
     text-align: center;
-    border: solid 2px blue;
+    border: solid 1px blue;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -113,7 +113,7 @@ header {
     height: 40px;
     background-color: white;
     text-align: center;
-    border: solid 2px green;
+    border: solid 1px green;
     border-radius: 10px;
     cursor: pointer;
 }
