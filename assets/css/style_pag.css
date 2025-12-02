@@ -61,7 +61,7 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    gap: 300px;
+    gap: 350px;
 }
 .links {
     align-items: center;
