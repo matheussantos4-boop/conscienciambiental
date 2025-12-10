@@ -75,21 +75,37 @@ header {
     margin: 5px;
     text-align: center;
 }
-Mudanças_climáticas{
-
+.Mudanças_climáticas{
+    background-image:  url('../img/MUDANÇAS\ CLIMATICA\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
-Energias_renováveis{
-
+.Energias_renováveis{
+    background-image: url('../img/Energias\ renovaveis.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
-Gestão_de_resíduos{
-
+.Gestão_de_resíduos{
+    background-image: url('../img/GESTAODERESIDUOS\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
-Sustentabilidade{
-
+.Sustentabilidade{
+    background-image: url('../img/sustentabilidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
-Biodiversidade{
-
+.Biodiversidade{
+    background-image: url('../img/biodiversidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
+
 .curso a {
     color: yellow;
     font-size: 20px;
