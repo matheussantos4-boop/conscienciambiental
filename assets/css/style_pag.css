@@ -364,12 +364,12 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 300px;
+    width: 3250px;
     height: 800px;
     border: solid yellow 5px;
-    border-radius: 0 15px 0 15px;
+    border-radius: 0 20px 0 20px;
     margin-top: 5px;
-    gap: 100px;
+    gap: 70px;
     box-shadow: 3px 3px 5px black;
 }
 .titulo01 {
@@ -467,21 +467,22 @@ footer {
     gap: 10px;
 }
 .lista02 a {
-    color: rgb(0, 26, 255);
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     transition: 0.3s;
     font-size: 23px;
 }
 .lista03 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    font-weight: 1000;
     font-size: 20px;
     color: blue;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
-    gap: 15px;
+    gap: 20px;
 }
 .t02{
     margin-top: 30px;
