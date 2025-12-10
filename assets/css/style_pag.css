@@ -78,7 +78,7 @@ header {
 }
 .lista a {
     color: blue;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 25px;
     transition: 0.3s;
 }
@@ -469,13 +469,13 @@ footer {
 .lista02 a {
     color: blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     transition: 0.3s;
     font-size: 23px;
 }
 .lista03 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 1000;
+    font-weight: 800;
     font-size: 20px;
     color: blue;
     list-style: none;
