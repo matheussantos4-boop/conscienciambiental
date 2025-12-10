@@ -20,7 +20,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px
+    gap: 15px;
 }
 .logo {
     width: 80px;
