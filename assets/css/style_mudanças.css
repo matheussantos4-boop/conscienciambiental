@@ -27,12 +27,12 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
 }
 
 .main-header h1 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
     color: green;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 80px;
