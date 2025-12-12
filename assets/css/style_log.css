@@ -31,8 +31,10 @@ body {
 }
 .titulo_site h1 {
     color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 80px;
-    font-weight: bolder;
+    font-style: italic;
+    font-weight: 1000;
 }
 .azul {
     background-color: blue;

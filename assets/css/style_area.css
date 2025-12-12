@@ -65,26 +65,23 @@ header {
 }
 .curso {
     height: 600px;
-    width: 200px;
+    width: 250px;
     background-color: blue;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     border: solid green 5px;
     border-radius: 0 15px 0 15px;
-    margin: 5px;
     text-align: center;
 }
 .curso a {
+    margin-top: 10px;
     color: yellow;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 800;
     font-style: italic;
 }
-.curso p {
-    color: white;
-}
+
 .curso:hover {
     background-color: yellow;
     border: solid blue 5px;
@@ -112,4 +109,34 @@ header {
 }
 .lista a:hover {
     color: green;
+}
+.Mudanças_climáticas{
+    background-image:  url('../img/MUDANÇAS\ CLIMATICA\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Energias_renováveis{
+    background-image: url('../img/Energias\ renovaveis.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Gestão_de_resíduos{
+    background-image: url('../img/GESTAODERESIDUOS\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Sustentabilidade{
+    background-image: url('../img/sustentabilidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Biodiversidade{
+    background-image: url('../img/biodiversidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
