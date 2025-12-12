@@ -447,10 +447,6 @@ footer {
     align-items: center;
     gap: 50px;
 }
-.redes img {
-    width: 50px;
-    height: 50px;
-}
 .termos {
     background-color: ;
     align-items: center;
@@ -503,3 +499,69 @@ footer {
     font-size: 25px;
     text-align: center;
 }
+.social-btn1 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-image:url('../img/facebook.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+    cursor:pointer;
+  }
+  .social-btn2 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-image:url('../img/instagram.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+    cursor:pointer;
+  }
+  .social-btn3 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-image:url('../img/tiktok.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+    cursor:pointer;
+  }
+  .social-btn4 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-image:url('../img/x.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+    cursor:pointer;
+  }
+  .social-btn5 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-image:url('../img/linkedin.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+    cursor:pointer;
+  }
+  .social-btn6 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-image:url('../img/youtube.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+    cursor:pointer;
+  }
