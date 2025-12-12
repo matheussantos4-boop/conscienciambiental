@@ -73,6 +73,37 @@ header {
     border-radius: 0 15px 0 15px;
     text-align: center;
 }
+.Mudanças_climáticas{
+    background-image:  url('../img/MUDANÇAS\ CLIMATICA\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Energias_renováveis{
+    background-image: url('../img/Energias\ renovaveis.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Gestão_de_resíduos{
+    background-image: url('../img/GESTAODERESIDUOS\ 1.png');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Sustentabilidade{
+    background-image: url('../img/sustentabilidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Biodiversidade{
+    background-image: url('../img/biodiversidade.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
 .curso a {
     margin-top: 10px;
     color: yellow;
@@ -110,6 +141,7 @@ header {
 .lista a:hover {
     color: green;
 }
+<<<<<<< HEAD
 .Mudanças_climáticas{
     background-image:  url('../img/MUDANÇAS\ CLIMATICA\ 1.png');
     background-position: center center;
@@ -140,3 +172,5 @@ header {
     background-size:cover;
     background-repeat: no-repeat;
 }
+=======
+>>>>>>> 0c53926fb0b080f17a898c5466325bf69a1466bf

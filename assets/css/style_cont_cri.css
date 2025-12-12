@@ -20,7 +20,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px
+    gap: 15px;
 }
 .logo {
     width: 80px;
@@ -40,7 +40,7 @@ body {
 }
 .titulo_cc h1 {
     color: red;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 1000;
 }
 .titulo_cc h3 {

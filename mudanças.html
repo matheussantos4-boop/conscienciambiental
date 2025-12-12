@@ -1,285 +1,151 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ConsciênciAbiental — Mudanças climáticas</title>
-  <link rel="stylesheet" href="style_mudanças.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsciênciAbiental - Mudanças Climáticas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <h1>ConsciênciAbiental</h1>
-      <p class="curso">Mudanças climáticas</p>
-    </div>
-  </header>
 
-  <main class="container">
-    <section class="video-section">
-      <div class="player-and-controls">
-        <div class="video-player">
-          <!-- Vídeo principal (inicial ligado ao primeiro item da playlist) -->
-          <div class="iframe-wrap">
-            <iframe id="mainVideo"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    title="Vídeo sobre Efeito Estufa"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
+    <header class="main-header">
+        <h1>ConsciênciAbiental</h1>
+        <p>Curso: Mudanças Climáticas</p>
+    </header>
 
-          <div class="video-meta">
-            <h2 class="lesson-title">Aula 01 - Efeito estufa</h2>
-            <div class="nav-arrows">
-              <button id="prevBtn" class="arrow-btn" aria-label="Aula anterior">&larr;</button>
-              <button id="nextBtn" class="arrow-btn" aria-label="Próxima aula">&rarr;</button>
+    <main class="container">
+        <section class="video-section">
+            <div class="video-player">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/P-YJpA1tK5c?si=X-qj6m3pQ3xXk42K" 
+                    title="YouTube video player - Efeito Estufa" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div>
-          </div>
 
-          <div class="summary-and-resources">
-            <h3>Resumo da aula</h3>
-            <p>
-              Nesta aula introduzimos o conceito de efeito estufa, como os gases de efeito estufa
-              (GEE) retêm calor na atmosfera e por que o aumento desses gases impulsiona as mudanças
-              climáticas. Veremos exemplos de GEE, fontes humanas e naturais, e consequências para
-              ecossistemas e sociedades.
-            </p>
-
-            <a class="pdf-download" href="materials/aula01-efeito-estufa.pdf" download>
-              Baixar resumo em PDF
+            <aside class="playlist">
+                <h2>Playlist do Curso (6 Aulas)</h2>
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-play"></i> Aula 01 - Efeito Estufa 
+                        <span class="duration">12:30</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video"></i> Aula 02 - Causas e Consequências
+                        <span class="duration">15:45</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video"></i> Aula 03 - Gases de Efeito Estufa
+                        <span class="duration">10:00</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video"></i> Aula 04 - O Papel da Indústria
+                        <span class="duration">18:20</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video"></i> Aula 05 - Soluções e Acordos
+                        <span class="duration">20:15</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-video"></i> Aula 06 - Ações Individuais
+                        <span class="duration">14:05</span>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        
+        <section class="navigation">
+            <a href="#" class="nav-arrow disabled">
+                <i class="fas fa-arrow-left"></i> Anterior
             </a>
-          </div>
-        </div>
+            <h2 class="lesson-title">Aula 01 - Efeito Estufa</h2>
+            <a href="#" class="nav-arrow">
+                Próximo <i class="fas fa-arrow-right"></i>
+            </a>
+        </section>
 
-        <aside class="playlist" aria-label="Play-list de vídeos sobre mudanças climáticas">
-          <h3>Play-list</h3>
-          <ul id="playlistList">
-            <li class="playlist-item" data-video-id="dQw4w9WgXcQ">
-              <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Miniatura 1">
-              <div class="pl-info">
-                <strong>Efeito Estufa — Introdução</strong>
-                <span>5:12</span>
-              </div>
-            </li>
+        <section class="content-area">
+            <div class="lesson-summary">
+                <h3>📜 Resumo da Aula: O Efeito Estufa</h3>
+                <p>O Efeito Estufa é um fenômeno natural essencial para a vida na Terra. Ele atua como um cobertor térmico, retendo parte do calor solar na atmosfera e mantendo a temperatura média do planeta em um nível habitável. Os principais gases responsáveis por esse efeito são o vapor d'água, o dióxido de carbono ($CO_2$), o metano ($CH_4$) e o óxido nitroso ($N_2O$).</p>
+                <p>O problema surge com o **aumento** da concentração desses gases, principalmente devido a atividades humanas como a queima de combustíveis fósseis (petróleo, carvão e gás natural) e o desmatamento. Esse aumento intensifica o Efeito Estufa, resultando no **aquecimento global** e nas consequentes **mudanças climáticas**.</p>
+                
+                <a href="#" class="download-pdf">
+                    <i class="fas fa-file-pdf"></i> Baixar Resumo em PDF
+                </a>
+            </div>
 
-            <li class="playlist-item" data-video-id="J---aiyznGQ">
-              <img src="https://img.youtube.com/vi/J---aiyznGQ/hqdefault.jpg" alt="Miniatura 2">
-              <div class="pl-info">
-                <strong>Gases de Efeito Estufa</strong>
-                <span>7:40</span>
-              </div>
-            </li>
+            <div class="quiz-section">
+                <h3>❓ Questionário - Avalie seu Conhecimento</h3>
+                <form>
+                    <div class="question">
+                        <p>1. Qual gás é o principal contribuinte antropogênico (causado por humanos) para o aumento do efeito estufa?</p>
+                        <label><input type="radio" name="q1" value="a"> A) Oxigênio ($O_2$)</label>
+                        <label><input type="radio" name="q1" value="b"> B) Dióxido de Carbono ($CO_2$)</label>
+                        <label><input type="radio" name="q1" value="c"> C) Nitrogênio ($N_2$)</label>
+                        <label><input type="radio" name="q1" value="d"> D) Argônio ($Ar$)</label>
+                        <label><input type="radio" name="q1" value="e"> E) Hidrogênio ($H_2$)</label>
+                    </div>
 
-            <li class="playlist-item" data-video-id="M7lc1UVf-VE">
-              <img src="https://img.youtube.com/vi/M7lc1UVf-VE/hqdefault.jpg" alt="Miniatura 3">
-              <div class="pl-info">
-                <strong>Fontes e Sumidouros</strong>
-                <span>6:05</span>
-              </div>
-            </li>
+                    <div class="question">
+                        <p>2. Qual é a principal fonte humana de emissão de Dióxido de Carbono ($CO_2$) que intensifica o aquecimento global?</p>
+                        <label><input type="radio" name="q2" value="a"> A) Produção de alimentos</label>
+                        <label><input type="radio" name="q2" value="b"> B) Queima de combustíveis fósseis</label>
+                        <label><input type="radio" name="q2" value="c"> C) Reciclagem de lixo</label>
+                        <label><input type="radio" name="q2" value="d"> D) Uso de energia solar</label>
+                        <label><input type="radio" name="q2" value="e"> E) Respiração humana e animal</label>
+                    </div>
 
-            <li class="playlist-item" data-video-id="e-ORhEE9VVg">
-              <img src="https://img.youtube.com/vi/e-ORhEE9VVg/hqdefault.jpg" alt="Miniatura 4">
-              <div class="pl-info">
-                <strong>Consequências Climáticas</strong>
-                <span>8:20</span>
-              </div>
-            </li>
+                    <div class="question">
+                        <p>3. O Efeito Estufa é um fenômeno...</p>
+                        <label><input type="radio" name="q3" value="a"> A) Totalmente criado pelo homem.</label>
+                        <label><input type="radio" name="q3" value="b"> B) Natural e essencial para a vida na Terra.</label>
+                        <label><input type="radio" name="q3" value="c"> C) Que só ocorre em ambientes poluídos.</label>
+                        <label><input type="radio" name="q3" value="d"> D) Exclusivo do planeta Terra.</label>
+                        <label><input type="radio" name="q3" value="e"> E) Que resfria a atmosfera.</label>
+                    </div>
 
-            <li class="playlist-item" data-video-id="kXYiU_JCYtU">
-              <img src="https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg" alt="Miniatura 5">
-              <div class="pl-info">
-                <strong>Impactos e Adaptação</strong>
-                <span>9:10</span>
-              </div>
-            </li>
+                    <div class="question">
+                        <p>4. Qual é o gás de efeito estufa com maior poder de aquecimento, mas menor concentração na atmosfera?</p>
+                        <label><input type="radio" name="q4" value="a"> A) Vapor d'água</label>
+                        <label><input type="radio" name="q4" value="b"> B) Dióxido de Carbono</label>
+                        <label><input type="radio" name="q4" value="c"> C) Metano ($CH_4$)</label>
+                        <label><input type="radio" name="q4" value="d"> D) Oxigênio</label>
+                        <label><input type="radio" name="q4" value="e"> E) Nitrogênio</label>
+                    </div>
+                    
+                    <div class="question">
+                        <p>5. O que ocorre quando o Efeito Estufa é intensificado?</p>
+                        <label><input type="radio" name="q5" value="a"> A) Diminuição da temperatura média global.</label>
+                        <label><input type="radio" name="q5" value="b"> B) Aquecimento global e mudanças climáticas.</label>
+                        <label><input type="radio" name="q5" value="c"> C) Aumento da camada de ozônio.</label>
+                        <label><input type="radio" name="q5" value="d"> D) Maior incidência de chuvas ácidas.</label>
+                        <label><input type="radio" name="q5" value="e"> E) Redução do nível dos oceanos.</label>
+                    </div>
 
-            <li class="playlist-item" data-video-id="9bZkp7q19f0">
-              <img src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg" alt="Miniatura 6">
-              <div class="pl-info">
-                <strong>Mitigação e Soluções</strong>
-                <span>10:02</span>
-              </div>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+                    <button type="submit" class="submit-quiz">Finalizar Questionário</button>
+                </form>
+            </div>
 
-    <section class="quiz-section">
-      <h3>Questionário — Aula 01</h3>
-      <form id="quizForm" class="quiz-form" aria-label="Questionário sobre efeito estufa">
-        <!-- Pergunta 1 -->
-        <fieldset>
-          <legend>1) O que é o efeito estufa?</legend>
-          <label><input type="radio" name="q1" value="a"> Um fenômeno artificial causado apenas por carros</label>
-          <label><input type="radio" name="q1" value="b"> Movimento das placas tectônicas</label>
-          <label><input type="radio" name="q1" value="c"> Processo natural onde certos gases retêm calor na atmosfera</label>
-          <label><input type="radio" name="q1" value="d"> Variação do nível do mar</label>
-          <label><input type="radio" name="q1" value="e"> Radiação direta do núcleo da Terra</label>
-        </fieldset>
+            <div class="comments-section">
+                <h3>💬 Deixe seu Comentário</h3>
+                <form>
+                    <textarea placeholder="Escreva sua dúvida, opinião ou contribuição aqui..."></textarea>
+                    <button type="submit" class="submit-comment">Enviar Comentário</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-        <!-- Pergunta 2 -->
-        <fieldset>
-          <legend>2) Qual destes é um gás de efeito estufa?</legend>
-          <label><input type="radio" name="q2" value="a"> Nitrogênio (N2)</label>
-          <label><input type="radio" name="q2" value="b"> Oxigênio (O2)</label>
-          <label><input type="radio" name="q2" value="c"> Dióxido de carbono (CO2)</label>
-          <label><input type="radio" name="q2" value="d"> Hélio (He)</label>
-          <label><input type="radio" name="q2" value="e"> Argônio (Ar)</label>
-        </fieldset>
+    <footer>
+        <p>&copy; 2023 ConsciênciAbiental. Todos os direitos reservados.</p>
+    </footer>
 
-        <!-- Pergunta 3 -->
-        <fieldset>
-          <legend>3) Qual é uma fonte antropogênica importante de CO2?</legend>
-          <label><input type="radio" name="q3" value="a"> Fotossíntese</label>
-          <label><input type="radio" name="q3" value="b"> Queima de combustíveis fósseis</label>
-          <label><input type="radio" name="q3" value="c"> Erosão natural</label>
-          <label><input type="radio" name="q3" value="d"> Radiação solar</label>
-          <label><input type="radio" name="q3" value="e"> Fluxo de marés</label>
-        </fieldset>
-
-        <!-- Pergunta 4 -->
-        <fieldset>
-          <legend>4) A intensificação do efeito estufa pode causar:</legend>
-          <label><input type="radio" name="q4" value="a"> Resfriamento global apenas</label>
-          <label><input type="radio" name="q4" value="b"> Aumento da temperatura média global</label>
-          <label><input type="radio" name="q4" value="c"> Diminuição das emissões de CO2 por si só</label>
-          <label><input type="radio" name="q4" value="d"> Formação de novas placas tectônicas</label>
-          <label><input type="radio" name="q4" value="e"> Transformação do Sol em supernova</label>
-        </fieldset>
-
-        <!-- Pergunta 5 -->
-        <fieldset>
-          <legend>5) Qual ação contribui para mitigar as mudanças climáticas?</legend>
-          <label><input type="radio" name="q5" value="a"> Aumentar o desmatamento</label>
-          <label><input type="radio" name="q5" value="b"> Diminuir a eficiência energética</label>
-          <label><input type="radio" name="q5" value="c"> Investir em energias renováveis</label>
-          <label><input type="radio" name="q5" value="d"> Aumentar o consumo de carvão</label>
-          <label><input type="radio" name="q5" value="e"> Promover queimadas controladas sem critérios</label>
-        </fieldset>
-
-        <div class="quiz-actions">
-          <button type="submit" class="btn-primary">Enviar respostas</button>
-          <div id="quizResult" class="quiz-result" aria-live="polite"></div>
-        </div>
-      </form>
-    </section>
-
-    <section class="comments-section">
-      <h3>Comentários</h3>
-      <form id="commentForm" class="comment-form" aria-label="Enviar comentário">
-        <label for="name">Nome</label>
-        <input id="name" name="name" type="text" placeholder="Seu nome (opcional)">
-
-        <label for="comment">Comentário</label>
-        <textarea id="comment" name="comment" rows="4" placeholder="Escreva seu comentário..."></textarea>
-
-        <div class="comment-actions">
-          <button type="submit" class="btn-secondary">Enviar comentário</button>
-        </div>
-      </form>
-
-      <div id="commentsList" class="comments-list" aria-live="polite">
-        <!-- Comentários submetidos aparecerão aqui -->
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© ConsciênciAbiental — Curso: Mudanças climáticas</p>
-  </footer>
-
-  <script>
-    // JavaScript para playlist, navegação de aulas, quiz e comentários
-    (function () {
-      const playlistItems = Array.from(document.querySelectorAll('.playlist-item'));
-      const mainVideo = document.getElementById('mainVideo');
-      const prevBtn = document.getElementById('prevBtn');
-      const nextBtn = document.getElementById('nextBtn');
-      const lessonTitle = document.querySelector('.lesson-title');
-
-      // Estado atual da playlist
-      let currentIndex = 0;
-
-      // Inicializa os handlers da playlist
-      function setVideoByIndex(index) {
-        if (index < 0) index = 0;
-        if (index >= playlistItems.length) index = playlistItems.length - 1;
-        currentIndex = index;
-
-        const id = playlistItems[currentIndex].dataset.videoId;
-        mainVideo.src = 'https://www.youtube.com/embed/' + id;
-        lessonTitle.textContent = 'Aula 0' + (currentIndex + 1) + ' - ' + playlistItems[currentIndex].querySelector('.pl-info strong').textContent;
-
-        // destaca item ativo
-        playlistItems.forEach((it, i) => {
-          it.classList.toggle('active', i === currentIndex);
-        });
-      }
-
-      playlistItems.forEach((item, i) => {
-        item.addEventListener('click', () => setVideoByIndex(i));
-      });
-
-      prevBtn.addEventListener('click', () => setVideoByIndex(currentIndex - 1));
-      nextBtn.addEventListener('click', () => setVideoByIndex(currentIndex + 1));
-
-      // Inicializa com o primeiro vídeo
-      setVideoByIndex(0);
-
-      // Quiz
-      const quizForm = document.getElementById('quizForm');
-      const quizResult = document.getElementById('quizResult');
-
-      // respostas corretas (usar as letras conforme value dos radios)
-      const answers = {
-        q1: 'c',
-        q2: 'c',
-        q3: 'b',
-        q4: 'b',
-        q5: 'c'
-      };
-
-      quizForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        let score = 0;
-        let total = Object.keys(answers).length;
-        for (let q in answers) {
-          const selected = quizForm.querySelector('input[name="' + q + '"]:checked');
-          if (selected && selected.value === answers[q]) score++;
-        }
-        quizResult.textContent = 'Você acertou ' + score + ' de ' + total + ' perguntas.';
-        quizResult.classList.add('show');
-      });
-
-      // Comentários
-      const commentForm = document.getElementById('commentForm');
-      const commentsList = document.getElementById('commentsList');
-
-      commentForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const name = (document.getElementById('name').value || 'Anônimo').trim();
-        const commentText = document.getElementById('comment').value.trim();
-        if (!commentText) return;
-
-        const card = document.createElement('article');
-        card.className = 'comment-card';
-        const header = document.createElement('header');
-        header.className = 'comment-header';
-        header.textContent = name + ' — ' + new Date().toLocaleString();
-        const body = document.createElement('p');
-        body.className = 'comment-body';
-        body.textContent = commentText;
-
-        card.appendChild(header);
-        card.appendChild(body);
-        commentsList.prepend(card);
-
-        // limpar formulário
-        commentForm.reset();
-      });
-    })();
-  </script>
 </body>
 </html>
