@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ConsciênciAbiental — Mudanças climáticas</title>
+  <link rel="stylesheet" href="style_mudanças.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>ConsciênciAbiental</h1>
+      <p class="curso">Mudanças climáticas</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="video-section">
+      <div class="player-and-controls">
+        <div class="video-player">
+          <!-- Vídeo principal (inicial ligado ao primeiro item da playlist) -->
+          <div class="iframe-wrap">
+            <iframe id="mainVideo"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Vídeo sobre Efeito Estufa"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+
+          <div class="video-meta">
+            <h2 class="lesson-title">Aula 01 - Efeito estufa</h2>
+            <div class="nav-arrows">
+              <button id="prevBtn" class="arrow-btn" aria-label="Aula anterior">&larr;</button>
+              <button id="nextBtn" class="arrow-btn" aria-label="Próxima aula">&rarr;</button>
+            </div>
+          </div>
+
+          <div class="summary-and-resources">
+            <h3>Resumo da aula</h3>
+            <p>
+              Nesta aula introduzimos o conceito de efeito estufa, como os gases de efeito estufa
+              (GEE) retêm calor na atmosfera e por que o aumento desses gases impulsiona as mudanças
+              climáticas. Veremos exemplos de GEE, fontes humanas e naturais, e consequências para
+              ecossistemas e sociedades.
+            </p>
+
+            <a class="pdf-download" href="materials/aula01-efeito-estufa.pdf" download>
+              Baixar resumo em PDF
+            </a>
+          </div>
+        </div>
+
+        <aside class="playlist" aria-label="Play-list de vídeos sobre mudanças climáticas">
+          <h3>Play-list</h3>
+          <ul id="playlistList">
+            <li class="playlist-item" data-video-id="dQw4w9WgXcQ">
+              <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Miniatura 1">
+              <div class="pl-info">
+                <strong>Efeito Estufa — Introdução</strong>
+                <span>5:12</span>
+              </div>
+            </li>
+
+            <li class="playlist-item" data-video-id="J---aiyznGQ">
+              <img src="https://img.youtube.com/vi/J---aiyznGQ/hqdefault.jpg" alt="Miniatura 2">
+              <div class="pl-info">
+                <strong>Gases de Efeito Estufa</strong>
+                <span>7:40</span>
+              </div>
+            </li>
+
+            <li class="playlist-item" data-video-id="M7lc1UVf-VE">
+              <img src="https://img.youtube.com/vi/M7lc1UVf-VE/hqdefault.jpg" alt="Miniatura 3">
+              <div class="pl-info">
+                <strong>Fontes e Sumidouros</strong>
+                <span>6:05</span>
+              </div>
+            </li>
+
+            <li class="playlist-item" data-video-id="e-ORhEE9VVg">
+              <img src="https://img.youtube.com/vi/e-ORhEE9VVg/hqdefault.jpg" alt="Miniatura 4">
+              <div class="pl-info">
+                <strong>Consequências Climáticas</strong>
+                <span>8:20</span>
+              </div>
+            </li>
+
+            <li class="playlist-item" data-video-id="kXYiU_JCYtU">
+              <img src="https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg" alt="Miniatura 5">
+              <div class="pl-info">
+                <strong>Impactos e Adaptação</strong>
+                <span>9:10</span>
+              </div>
+            </li>
+
+            <li class="playlist-item" data-video-id="9bZkp7q19f0">
+              <img src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg" alt="Miniatura 6">
+              <div class="pl-info">
+                <strong>Mitigação e Soluções</strong>
+                <span>10:02</span>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <h3>Questionário — Aula 01</h3>
+      <form id="quizForm" class="quiz-form" aria-label="Questionário sobre efeito estufa">
+        <!-- Pergunta 1 -->
+        <fieldset>
+          <legend>1) O que é o efeito estufa?</legend>
+          <label><input type="radio" name="q1" value="a"> Um fenômeno artificial causado apenas por carros</label>
+          <label><input type="radio" name="q1" value="b"> Movimento das placas tectônicas</label>
+          <label><input type="radio" name="q1" value="c"> Processo natural onde certos gases retêm calor na atmosfera</label>
+          <label><input type="radio" name="q1" value="d"> Variação do nível do mar</label>
+          <label><input type="radio" name="q1" value="e"> Radiação direta do núcleo da Terra</label>
+        </fieldset>
+
+        <!-- Pergunta 2 -->
+        <fieldset>
+          <legend>2) Qual destes é um gás de efeito estufa?</legend>
+          <label><input type="radio" name="q2" value="a"> Nitrogênio (N2)</label>
+          <label><input type="radio" name="q2" value="b"> Oxigênio (O2)</label>
+          <label><input type="radio" name="q2" value="c"> Dióxido de carbono (CO2)</label>
+          <label><input type="radio" name="q2" value="d"> Hélio (He)</label>
+          <label><input type="radio" name="q2" value="e"> Argônio (Ar)</label>
+        </fieldset>
+
+        <!-- Pergunta 3 -->
+        <fieldset>
+          <legend>3) Qual é uma fonte antropogênica importante de CO2?</legend>
+          <label><input type="radio" name="q3" value="a"> Fotossíntese</label>
+          <label><input type="radio" name="q3" value="b"> Queima de combustíveis fósseis</label>
+          <label><input type="radio" name="q3" value="c"> Erosão natural</label>
+          <label><input type="radio" name="q3" value="d"> Radiação solar</label>
+          <label><input type="radio" name="q3" value="e"> Fluxo de marés</label>
+        </fieldset>
+
+        <!-- Pergunta 4 -->
+        <fieldset>
+          <legend>4) A intensificação do efeito estufa pode causar:</legend>
+          <label><input type="radio" name="q4" value="a"> Resfriamento global apenas</label>
+          <label><input type="radio" name="q4" value="b"> Aumento da temperatura média global</label>
+          <label><input type="radio" name="q4" value="c"> Diminuição das emissões de CO2 por si só</label>
+          <label><input type="radio" name="q4" value="d"> Formação de novas placas tectônicas</label>
+          <label><input type="radio" name="q4" value="e"> Transformação do Sol em supernova</label>
+        </fieldset>
+
+        <!-- Pergunta 5 -->
+        <fieldset>
+          <legend>5) Qual ação contribui para mitigar as mudanças climáticas?</legend>
+          <label><input type="radio" name="q5" value="a"> Aumentar o desmatamento</label>
+          <label><input type="radio" name="q5" value="b"> Diminuir a eficiência energética</label>
+          <label><input type="radio" name="q5" value="c"> Investir em energias renováveis</label>
+          <label><input type="radio" name="q5" value="d"> Aumentar o consumo de carvão</label>
+          <label><input type="radio" name="q5" value="e"> Promover queimadas controladas sem critérios</label>
+        </fieldset>
+
+        <div class="quiz-actions">
+          <button type="submit" class="btn-primary">Enviar respostas</button>
+          <div id="quizResult" class="quiz-result" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
+    <section class="comments-section">
+      <h3>Comentários</h3>
+      <form id="commentForm" class="comment-form" aria-label="Enviar comentário">
+        <label for="name">Nome</label>
+        <input id="name" name="name" type="text" placeholder="Seu nome (opcional)">
+
+        <label for="comment">Comentário</label>
+        <textarea id="comment" name="comment" rows="4" placeholder="Escreva seu comentário..."></textarea>
+
+        <div class="comment-actions">
+          <button type="submit" class="btn-secondary">Enviar comentário</button>
+        </div>
+      </form>
+
+      <div id="commentsList" class="comments-list" aria-live="polite">
+        <!-- Comentários submetidos aparecerão aqui -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© ConsciênciAbiental — Curso: Mudanças climáticas</p>
+  </footer>
+
+  <script>
+    // JavaScript para playlist, navegação de aulas, quiz e comentários
+    (function () {
+      const playlistItems = Array.from(document.querySelectorAll('.playlist-item'));
+      const mainVideo = document.getElementById('mainVideo');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const lessonTitle = document.querySelector('.lesson-title');
+
+      // Estado atual da playlist
+      let currentIndex = 0;
+
+      // Inicializa os handlers da playlist
+      function setVideoByIndex(index) {
+        if (index < 0) index = 0;
+        if (index >= playlistItems.length) index = playlistItems.length - 1;
+        currentIndex = index;
+
+        const id = playlistItems[currentIndex].dataset.videoId;
+        mainVideo.src = 'https://www.youtube.com/embed/' + id;
+        lessonTitle.textContent = 'Aula 0' + (currentIndex + 1) + ' - ' + playlistItems[currentIndex].querySelector('.pl-info strong').textContent;
+
+        // destaca item ativo
+        playlistItems.forEach((it, i) => {
+          it.classList.toggle('active', i === currentIndex);
+        });
+      }
+
+      playlistItems.forEach((item, i) => {
+        item.addEventListener('click', () => setVideoByIndex(i));
+      });
+
+      prevBtn.addEventListener('click', () => setVideoByIndex(currentIndex - 1));
+      nextBtn.addEventListener('click', () => setVideoByIndex(currentIndex + 1));
+
+      // Inicializa com o primeiro vídeo
+      setVideoByIndex(0);
+
+      // Quiz
+      const quizForm = document.getElementById('quizForm');
+      const quizResult = document.getElementById('quizResult');
+
+      // respostas corretas (usar as letras conforme value dos radios)
+      const answers = {
+        q1: 'c',
+        q2: 'c',
+        q3: 'b',
+        q4: 'b',
+        q5: 'c'
+      };
+
+      quizForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let score = 0;
+        let total = Object.keys(answers).length;
+        for (let q in answers) {
+          const selected = quizForm.querySelector('input[name="' + q + '"]:checked');
+          if (selected && selected.value === answers[q]) score++;
+        }
+        quizResult.textContent = 'Você acertou ' + score + ' de ' + total + ' perguntas.';
+        quizResult.classList.add('show');
+      });
+
+      // Comentários
+      const commentForm = document.getElementById('commentForm');
+      const commentsList = document.getElementById('commentsList');
+
+      commentForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = (document.getElementById('name').value || 'Anônimo').trim();
+        const commentText = document.getElementById('comment').value.trim();
+        if (!commentText) return;
+
+        const card = document.createElement('article');
+        card.className = 'comment-card';
+        const header = document.createElement('header');
+        header.className = 'comment-header';
+        header.textContent = name + ' — ' + new Date().toLocaleString();
+        const body = document.createElement('p');
+        body.className = 'comment-body';
+        body.textContent = commentText;
+
+        card.appendChild(header);
+        card.appendChild(body);
+        commentsList.prepend(card);
+
+        // limpar formulário
+        commentForm.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
